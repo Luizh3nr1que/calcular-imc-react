@@ -1,6 +1,6 @@
 # calcular-imc-react
 
-<b>Quiz 2.0 é um jogo interativo baseado na web, desenvolvido usando HTML, CSS e JavaScript. Este projeto em constante evolução permite que os usuários testem seus conhecimentos em uma variedade de assuntos através de perguntas e respostas. Com o tempo, novas funcionalidades e temas serão adicionados para tornar a experiência ainda mais cativante.<b>
+<b>Esta é uma calculadora de IMC simples desenvolvida em React. O Índice de Massa Corporal (IMC) é uma medida que estima se uma pessoa está com peso saudável, acima do peso ou abaixo do peso. Essa calculadora permite que o usuário insira seu peso e altura e obtenha o valor do IMC correspondente.<b>
 <br>
 
 <h1>Tecnologias utilizadas</h1>
