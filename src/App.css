@@ -1,38 +1,104 @@
-.App {
-  text-align: center;
+.app {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+h1 {
+    font-size: 50px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+span {
+    font-weight: 500;
+    font-size: 17px;
+    margin: 12px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.area-input {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.area-input input {
+    width: 100%;
+    margin-bottom: 12px;
+    height: 46px;
+    background-color: rgb(34, 34, 34);
+    border: 0;
+    outline: none;
+    border-radius: 5px;
+    padding: 0 0 0 20px;
+    font-size: 17px;
+    color: rgb(212, 212, 212);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.area-input input::placeholder {
+    color: rgb(199, 199, 199);
+    font-size: 17px;
+}
+
+.btnCalcular {
+    width: 100%;
+    margin: 10px 0 20px 0;
+    height: 46px;
+    background-color: rgb(49, 199, 69);
+    border: none;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    border-radius: 5px;
+}
+
+.msgContainer {
+    width: 500px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    justify-content: space-around;
+    animation: animation .6s linear;
+}
+
+h2 {
+    text-align: center;
+    font-size: 17px;
+    background-color: rgba(40, 40, 40, 0.987);
+    padding: 10px;
+    width: 100%;
+    border-radius: 5px;
+    color: #fff;
+}
+
+.clearBtn {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    color: rgb(255, 68, 68);
+    border: 1px solid rgb(255, 68, 68);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    transition: .3s;
+}
+
+.clearBtn:hover {
+    color: white;
+    background-color: rgb(255, 68, 68);
+}
+
+@keyframes animation {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
