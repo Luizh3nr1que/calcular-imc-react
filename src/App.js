@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import './app.css';
 import { FaTrash } from 'react-icons/fa';
+
+import './app.css';
 
 export default function App() {
     const [peso, setPeso] = useState('');
