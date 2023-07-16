@@ -35,8 +35,9 @@ export default function App() {
     }
 
     function clearBtn() {
+        setPeso('');
+        setAltura('');
         setDisplayMsg(false);
-
     }
 
     function handleKeyDown(event) {
@@ -47,7 +48,7 @@ export default function App() {
 
     return (
         <div className="app">
-            <h1 data-aos="fade-up" data-aos-delay='400'>Calculadora IMC</h1>
+            <h1>Calculadora IMC</h1>
             <span>Vamos calcular seu IMC</span>
 
             <div className="area-input">
