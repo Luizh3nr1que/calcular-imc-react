@@ -1,7 +1,8 @@
+import './App.css';
+
 import React, { useState } from 'react';
 import { FaTrash } from 'react-icons/fa';
 
-import './App.css';
 
 export default function App() {
     const [peso, setPeso] = useState('');
@@ -52,8 +53,6 @@ export default function App() {
             <div className="area-input">
                 <input
                     className='peso'
-                    data-aos-delay='350'
-                    data-aos="fade-left"
                     type="text"
                     placeholder="Peso em (kg)"
                     value={peso}
@@ -62,8 +61,6 @@ export default function App() {
 
                 <input
                     className='altura'
-                    data-aos-delay='450'
-                    data-aos="fade-left"
                     type="text"
                     placeholder="Altura em (cm)"
                     value={altura}
