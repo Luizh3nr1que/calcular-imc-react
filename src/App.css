@@ -23,25 +23,73 @@ span {
     display: flex;
     flex-direction: column;
     align-items: center;
+
+}
+
+.area-inputs {
+    width: 500px;
+    position: relative;
+
 }
 
 .area-input input {
     width: 100%;
     margin-bottom: 12px;
     height: 46px;
-    background-color: rgb(34, 34, 34);
+    background-color: rgb(232, 232, 232);
     border: 0;
     outline: none;
     border-radius: 5px;
     padding: 0 20px 0 20px;
     font-size: 17px;
-    color: rgb(212, 212, 212);
+    color: rgb(41, 41, 41);
+    font-weight: 500;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    transition-duration: .2s;
 }
 
 .area-input input::placeholder {
-    color: rgb(199, 199, 199);
+    color: rgb(41, 41, 41);
     font-size: 17px;
+    font-weight: 500;
 }
+
+
+input:focus {
+    animation: input-focus 0.3s ease;
+}
+
+
+.highlight {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #00ff19;
+    transition: width 0.3s ease;
+}
+
+input:focus+.highlight {
+    width: 100%;
+}
+
+@keyframes input-focus {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    }
+
+    to {
+        transform: scale(1.02);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+
+
 
 .btnCalcular {
     width: 100%;
@@ -78,19 +126,19 @@ span {
 h2 {
     text-align: center;
     font-size: 17px;
-    background-color: rgba(40, 40, 40, 0.987);
+    background-color: rgb(232, 232, 232);
     padding: 10px;
     width: 100%;
     border-radius: 5px;
-    color: #fff;
+    color: #383838;
 }
 
 .clearBtn {
     width: 40px;
     height: 40px;
     background-color: transparent;
-    color: rgb(255, 68, 68);
-    border: 1px solid rgb(255, 68, 68);
+    color: rgb(47, 47, 47);
+    border: 1px solid transparent;
     border-radius: 5px;
     display: flex;
     align-items: center;
@@ -100,8 +148,8 @@ h2 {
 }
 
 .clearBtn:hover {
-    color: white;
-    background-color: rgb(255, 68, 68);
+    color: rgb(255, 68, 68);
+    background-color: transparent;
 }
 
 @keyframes animation {
