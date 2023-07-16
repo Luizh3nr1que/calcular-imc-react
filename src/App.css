@@ -33,7 +33,7 @@ span {
     border: 0;
     outline: none;
     border-radius: 5px;
-    padding: 0 0 0 20px;
+    padding: 0 20px 0 20px;
     font-size: 17px;
     color: rgb(212, 212, 212);
 }

@@ -54,7 +54,7 @@ export default function App() {
             <div className="area-input">
                 <input
                     className='peso'
-                    type="text"
+                    type="number"
                     placeholder="Peso em (kg)"
                     value={peso}
                     onChange={(e) => setPeso(e.target.value)}
@@ -62,7 +62,7 @@ export default function App() {
 
                 <input
                     className='altura'
-                    type="text"
+                    type="number"
                     placeholder="Altura em (cm)"
                     value={altura}
                     onChange={(e) => setAltura(e.target.value)}
